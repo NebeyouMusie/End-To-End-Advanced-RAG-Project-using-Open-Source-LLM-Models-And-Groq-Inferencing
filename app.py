@@ -13,6 +13,8 @@ import time
 
 load_config()
 
+st.set_page_config(layout='wide', page_title="Groq for RAG")
+
 groq_api_key = get_groq_api_key()
 
 if 'vector' not in st.session_state:
@@ -49,7 +51,7 @@ if prompt:
     response=retrieval_chain.invoke({"input":prompt})
     print("Response time :",time.process_time()-start)
     st.write(response['answer'])
-    st.write(f'response time: {time.process_time()-start}:2f s')
+    st.write(f'response time: {(time.process_time() - start):.2f} sec')
 
     # With a streamlit expander
     with st.expander("Document Similarity Search"):
