@@ -4,7 +4,7 @@
 ![Groq for RAG Image](./images/chatbot-image.png)
 
 ## DEMO
- - You can check the project live [here](https://8510-01hwj8ynshjz7spkr595x77ec2.cloudspaces.litng.ai/)
+ - You can try the project live [here](https://8510-01hwj8ynshjz7spkr595x77ec2.cloudspaces.litng.ai/)
 
 ## Description
 - This project showcase the implementation of an advanced RAG system that uses groq as an llm to retrieve information about langsmith.
